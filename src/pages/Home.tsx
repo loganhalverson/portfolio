@@ -34,9 +34,9 @@ export const Home = () => {
 								</svg>
 							</a>
 							<a
-								href="#latest-works"
+								href="https://drive.google.com/file/d/1KxCVNtJlw7PyXjL6gLTpgz68qXwWMvx4/view"
 								className="mt-8 text-2xl font-light border-slate-800 border-2 hover:border-slate-600 hover:bg-slate-800 transition group rounded-md px-4 py-3 flex items-center text-center w-fit">
-								<span>See my resume</span>
+								<span>See my résumé</span>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
@@ -65,7 +65,7 @@ export const Home = () => {
 
 				<div className="mt-16 grid grid-cols-12 px-16 relative">
 					{/* Portrait */}
-					<div className="col-span-4 col-start-1 row-span-full relative">
+					<div className="col-span-4 col-start-1 row-span-full relative mb-3">
 						<div className="absolute h-full scale-x-105 bg-teal-600 rounded-lg -top-4 left-0 w-full" />
 						{/* <div className="absolute h-full bg-slate-950 rounded-md scale-x-[1.025] -top-[0.5rem] left-0 w-full" /> */}
 						<img src="https://i.imgur.com/OTnE1B5.jpeg" alt="portrait" className="rounded-lg object-cover filter brightness-90" />
@@ -73,16 +73,20 @@ export const Home = () => {
 					{/* Blurb */}
 					<div className="col-start-6 col-end-13 row-span-full flex flex-col flex-1 justify-center gap-y-6">
 						<p className="prose text-white text-lg font-thin">
-							I graduated from Central Washington University with a <span className="text-teal-300 font-normal">Bachelor of Science in computer science</span>{' '}
-							in 2023 and have been building projects ever since.
+							I graduated from Central Washington University with a <span className="text-teal-200 font-normal">Bachelor of Science in computer science</span>{' '}
+							in 2023. I am currently seeking employment but enjoying my time building projects until that day comes.
 						</p>
 						<p className="prose text-white text-lg font-thin">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam impedit culpa distinctio voluptas, libero atque minus autem blanditiis quo maxime
-							quae? Voluptas, rem. Doloremque aliquam voluptas architecto, sint accusamus provident.
+							I first set hands on a keyboard at five years old in 2006, though it was more like mashing stubby fingers against it than typing. My father worked
+							as a network engineer, so it was only natural I'd be taught early how to use a computer. Ever since, I've been fascinated with them throughout my
+							schooling and beyond.
 						</p>
 						<p className="prose text-white text-lg font-thin">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam impedit culpa distinctio voluptas, libero atque minus autem blanditiis quo maxime
-							quae? Voluptas, rem. Doloremque aliquam voluptas architecto, sint accusamus provident.
+							Outside of programming, my favorite past time as I've grown older is reading. You can find what I'm currently reading on my{' '}
+							<a href="https://app.thestorygraph.com/profile/edelstein" className="text-amber-400 underline">
+								storygraph profile
+							</a>
+							. When among friends, we play video games like we have been since elmenetary school.
 						</p>
 
 						{/* Skills Header */}
@@ -136,14 +140,14 @@ export const Home = () => {
 							</div>
 							{/* Links */}
 							<div>
-								<a href="https://warm-empanada-0fb072.netlify.app/" className="mt-6 inline-flex items-center mr-4 group/link hover:text-teal-300 transition">
+								<a href="https://warm-empanada-0fb072.netlify.app/" className="mt-6 inline-flex items-center mr-4 group/link hover:text-amber-400 transition">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 inline mr-2">
 										<path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z" />
 										<path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z" />
 									</svg>
 									<span className="group-hover/link:underline">Live Site</span>
 								</a>
-								<a href="https://github.com/loganhalverson/vrcolors" className="mt-6 inline-flex items-center mr-4 group/link hover:text-teal-300 transition">
+								<a href="https://github.com/loganhalverson/vrcolors" className="mt-6 inline-flex items-center mr-4 group/link hover:text-amber-400 transition">
 									<svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 inline mr-2" viewBox="0 0 24 24">
 										<path
 											fill="currentColor"
@@ -182,7 +186,7 @@ export const Home = () => {
 							{/* Links */}
 							<a
 								href="https://docs.google.com/presentation/d/1XarBl_QDAfMsQfs9jbCJ5wgOAwlmfGGLSa14Xk8ef8A/edit#slide=id.g24bd759f86a_1_363"
-								className="mt-6 inline-flex items-center mr-4 group/link hover:text-teal-300 transition">
+								className="mt-6 inline-flex items-center mr-4 group/link hover:text-amber-400 transition">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 inline mr-2">
 									<path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z" />
 									<path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z" />
@@ -214,14 +218,14 @@ export const Home = () => {
 							</div>
 							{/* Links */}
 							<div>
-								<a href="https://regal-cactus-f42c40.netlify.app/" className="mt-6 inline-flex items-center mr-4 group/link hover:text-teal-300 transition">
+								<a href="https://regal-cactus-f42c40.netlify.app/" className="mt-6 inline-flex items-center mr-4 group/link hover:text-amber-400 transition">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 inline mr-2">
 										<path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z" />
 										<path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z" />
 									</svg>
 									<span className="group-hover/link:underline">Live Site</span>
 								</a>
-								<a href="https://github.com/loganhalverson/the-alley" className="mt-6 inline-flex items-center mr-4 group/link hover:text-teal-300 transition">
+								<a href="https://github.com/loganhalverson/the-alley" className="mt-6 inline-flex items-center mr-4 group/link hover:text-amber-400 transition">
 									<svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 inline mr-2" viewBox="0 0 24 24">
 										<path
 											fill="currentColor"
