@@ -43,10 +43,10 @@ export const Skill = ({ option }: SkillProps) => {
 
 	return (
 		<div className="relative group">
-			<span className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-4 rounded-lg py-1 px-2 text-center text-gray-50 transition scale-0 group-hover:translate-y-10 group-hover:scale-100">
+			<span className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-4 rounded-lg py-1 px-2 text-xl text-center text-gray-50 transition scale-0 group-hover:translate-y-12 group-hover:scale-100">
 				{option}
 			</span>
-			<img src={icon} alt={option} className="h-12 w-12 group-hover:scale-110 transition" />
+			<img src={icon} alt={option} className="h-16 w-16 group-hover:scale-110 transition" />
 		</div>
 	);
 };

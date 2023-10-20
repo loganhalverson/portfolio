@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Project banner imports
 import vrcolorsBanner from '../assets/images/banners/vrcolors.png';
 import alleyBanner from '../assets/images/banners/theAlley.png';
@@ -8,17 +6,20 @@ import kareBanner from '../assets/images/banners/KAREproject.png';
 import { Skill } from '../components/Skill';
 import { Tool } from '../components/Tool';
 
+import '../styles/waves.css';
+
 export const Home = () => {
 	return (
 		<div className="text-white tracking-wide bg-slate-950">
 			{/* Hero Banner */}
-			<div className="from-neutral-950 to-slate-950 bg-gradient-to-b relative">
+			<div className="bg-[#070c1d] relative">
 				<div className="container mx-auto min-h-screen flex flex-1 flex-col justify-center items-start">
 					<div className="text-left">
 						<h1 className="text-6xl tracking-wide font-light text-white filter brightness-200">
-							Hi, I'm <span className="text-teal-400">Logan</span>.
+							Hi, I'm <span className="text-sky-400">Logan</span>.
 						</h1>
 						<p className="text-3xl font-light mt-8">A software engineer by trade, a designer at heart.</p>
+
 						<div className="flex flex-row gap-x-6">
 							<a
 								href="#latest-works"
@@ -55,26 +56,39 @@ export const Home = () => {
 						</div>
 					</div>
 				</div>
+				{/* Waves */}
+				<div className="absolute bottom-0 left-0 w-full">
+					<svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
+						<defs>
+							<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+						</defs>
+						<g className="parallax">
+							<use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(2,6,23,0.7" />
+							<use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(2,6,23,0.5)" />
+							<use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(2,6,23,0.3)" />
+							<use xlinkHref="#gentle-wave" x="48" y="7" fill="#020617" />
+						</g>
+					</svg>
+				</div>
 			</div>
 
 			{/* --- About Me Section --- */}
 			<div id="about-me" className="container mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8 flex flex-1 flex-col justify-center items-center">
 				{/* Header */}
-				<h2 className="text-5xl tracking-wide font-light text-white">About Me</h2>
+				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">About Me</h2>
 
 				<div className="mt-16 grid grid-cols-12 px-16 relative">
 					{/* Portrait */}
 					<div className="col-span-4 col-start-1 row-span-full relative mb-3">
-						<div className="absolute h-full scale-x-105 bg-teal-600 rounded-lg -top-4 left-0 w-full" />
-						{/* <div className="absolute h-full bg-slate-950 rounded-md scale-x-[1.025] -top-[0.5rem] left-0 w-full" /> */}
+						<div className="absolute h-full scale-x-105 border-sky-400 border-2 rounded-lg -top-4 left-0 w-full" />
 						<img src="https://i.imgur.com/OTnE1B5.jpeg" alt="portrait" className="rounded-lg object-cover filter brightness-90" />
 					</div>
 					{/* Blurb */}
 					<div className="col-start-6 col-end-13 row-span-full flex flex-col flex-1 justify-center gap-y-6">
 						<p className="prose text-white text-lg font-thin">
-							I graduated from Central Washington University with a <span className="text-teal-200 font-normal">Bachelor of Science in computer science</span>{' '}
-							in 2023. I am currently seeking employment but enjoying my time building projects until that day comes.
+							I graduated from Central Washington University with a <span className="text-sky-300 font-normal">Bachelor of Science in computer science</span> in
+							2023. I am currently seeking employment but enjoying my time building projects until that day comes.
 						</p>
 						<p className="prose text-white text-lg font-thin">
 							I first set hands on a keyboard at five years old in 2006, although it was much more mashing stubby fingers against it than typing. My father
@@ -83,7 +97,7 @@ export const Home = () => {
 						</p>
 						<p className="prose text-white text-lg font-thin">
 							Outside of programming, my favorite past time is reading. You can find what I'm currently reading on my{' '}
-							<a href="https://app.thestorygraph.com/profile/edelstein" className="text-amber-400 underline">
+							<a href="https://app.thestorygraph.com/profile/edelstein" className="hover:text-amber-400 font-normal underline">
 								storygraph profile
 							</a>
 							. When among friends, we play video games like we have been since elementary school.
@@ -91,9 +105,9 @@ export const Home = () => {
 
 						{/* Skills Header */}
 						<div className="flex items-center justify-center mt-4">
-							<div className="w-1/5 bg-teal-400 h-0.5" />
+							<div className="w-1/5 bg-sky-400 h-0.5" />
 							<p className="mx-4 text-3xl -translate-y-0.5">Skills</p>
-							<div className="w-1/5 bg-teal-400 h-0.5" />
+							<div className="w-1/5 bg-sky-400 h-0.5" />
 						</div>
 
 						<div className="flex items-center justify-center gap-x-4 gap-y-2 flex-wrap">
@@ -113,27 +127,27 @@ export const Home = () => {
 			{/* --- Latest Works Section --- */}
 			<div id="latest-works" className="container mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8 flex flex-1 flex-col justify-center items-center">
-				<h2 className="text-5xl tracking-wide font-light text-white text-center">Latest Works</h2>
+				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Latest Works</h2>
 
 				<div className="px-16">
 					{/* VRColors Card */}
 					<div className="grid grid-cols-10 mt-16 group">
 						<div className="col-span-6 col-start-1 row-span-full self-center rounded-md relative">
-							<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-teal-950 opacity-50 bg-gradient-to-br transition group-hover:opacity-10 delay-75 duration-500 rounded-md"></div>
+							<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition group-hover:opacity-10 delay-75 duration-500 rounded-md" />
 							<img className="rounded-md object-cover" src={vrcolorsBanner} alt="VRColors Banner" />
 						</div>
 						<div className="col-span-6 col-start-5 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
 							{/* Title */}
-							<h3 className="font-thin text-4xl uppercase tracking-wide text-teal-400">VRColors</h3>
+							<h3 className="font-thin text-4xl uppercase tracking-wide text-sky-400">VRColors</h3>
 							{/* Description */}
 							<p className="mt-2 prose">
 								A theme creation and sharing website for VRChat. Created to solve a problem within the community, I learned how to build a complex web
-								application using <span className="text-teal-200 font-semibold">modern React principles</span>. A significant focus of the app was user
-								experience. This was developed by <span className="text-teal-200 font-semibold">conducting user interviews</span> with several people, adjusting
+								application using <span className="text-sky-300 font-semibold">modern React principles</span>. A significant focus of the app was user
+								experience. This was developed by <span className="text-sky-300 font-semibold">conducting user interviews</span> with several people, adjusting
 								the design and clarifying features of the website based on the feedback receieved.
 							</p>
 							{/* Skills */}
-							<p className="mt-4 font-thin text-lg uppercase tracking-wide text-teal-500">Tools Used</p>
+							<p className="mt-4 font-thin text-lg uppercase tracking-wide text-sky-500">Tools Used</p>
 							<div className="flex flex-row gap-x-3">
 								<Tool text="React" />
 								<Tool text="Tailwind CSS" />
@@ -163,22 +177,22 @@ export const Home = () => {
 					{/* KARE Card */}
 					<div className="grid grid-cols-10 mt-16 group">
 						<div className="col-span-6 col-end-11 row-span-full self-center rounded-md relative">
-							<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-teal-950 opacity-50 bg-gradient-to-br transition group-hover:opacity-10 delay-75 duration-500 rounded-md"></div>
+							<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition group-hover:opacity-10 delay-75 duration-500 rounded-md" />
 							<img className="rounded-md object-cover" src={kareBanner} alt="KARE Banner" />
 						</div>
 						<div className="col-span-6 col-start-1 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
 							{/* Title */}
-							<h3 className="font-thin text-4xl uppercase tracking-wide text-teal-400">KARE Project</h3>
+							<h3 className="font-thin text-4xl uppercase tracking-wide text-sky-400">KARE Project</h3>
 							{/* Description */}
 							<p className="mt-2 prose">
-								Medical software developed by a team of <span className="font-semibold text-teal-200">nine developers</span> for my college capstone course. The
+								Medical software developed by a team of <span className="font-semibold text-sky-300">nine developers</span> for my college capstone course. The
 								purpose of KARE is to help parents of medically complex children care for them in a domestic environment. I was responsible for the{' '}
-								<span className="font-semibold text-teal-200">mobile development and design</span> of the software, along with gathering and clarifying
-								requirements from the client. I acted as the <span className="font-semibold text-teal-200">scrum master</span> for the mobile team, ensuring our
+								<span className="font-semibold text-sky-300">mobile development and design</span> of the software, along with gathering and clarifying
+								requirements from the client. I acted as the <span className="font-semibold text-sky-300">scrum master</span> for the mobile team, ensuring our
 								development went smoothly.
 							</p>
 							{/* Skills */}
-							<p className="mt-4 font-thin text-lg uppercase tracking-wide text-teal-500">Tools Used</p>
+							<p className="mt-4 font-thin text-lg uppercase tracking-wide text-sky-500">Tools Used</p>
 							<div className="flex flex-row gap-x-3">
 								<Tool text="React Native" />
 								<Tool text="Expo GO" />
@@ -200,20 +214,19 @@ export const Home = () => {
 					{/* The Alley Card */}
 					<div className="grid grid-cols-10 mt-16 group">
 						<div className="col-span-6 col-start-1 row-span-full self-center rounded-md relative">
-							<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-teal-950 opacity-50 bg-gradient-to-br transition group-hover:opacity-10 delay-75 duration-500 rounded-md"></div>
-
+							<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition group-hover:opacity-10 delay-75 duration-500 rounded-md" />
 							<img className="rounded-md object-cover" src={alleyBanner} alt="The Alley Banner" />
 						</div>
 						<div className="col-span-6 col-start-5 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
 							{/* Title */}
-							<h3 className="font-thin text-4xl uppercase tracking-wide text-teal-400">The Alley</h3>
+							<h3 className="font-thin text-4xl uppercase tracking-wide text-sky-400">The Alley</h3>
 							{/* Description */}
 							<p className="mt-2 prose">
-								A simple website for a local music venue. Developed as my first project with <span className="text-teal-200 font-semibold">Tailwind</span>, it
+								A simple website for a local music venue. Developed as my first project with <span className="text-sky-300 font-semibold">Tailwind</span>, it
 								was a way for me to learn the library and create something for a place I loved.
 							</p>
 							{/* Skills */}
-							<p className="mt-4 font-thin text-lg uppercase tracking-wide text-teal-500">Tools Used</p>
+							<p className="mt-4 font-thin text-lg uppercase tracking-wide text-sky-500">Tools Used</p>
 							<div className="flex flex-row gap-x-3">
 								<Tool text="HTML" />
 								<Tool text="Tailwind CSS" />
@@ -245,7 +258,10 @@ export const Home = () => {
 			{/* --- Contact Section --- */}
 			<div id="contact" className="container mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8">
-				<div className="min-h-[80vh]"></div>
+				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Contact</h2>
+				<div className="min-h-[60vh] flex justify-center items-center flex-row">
+					<p>Let's work together!</p>
+				</div>
 			</div>
 
 			<footer className="flex justify-center items-center w-full">
