@@ -16,7 +16,7 @@ export const Home = () => {
 				<div className="container mx-auto min-h-screen flex flex-1 flex-col justify-center items-start">
 					<div className="text-left">
 						<h1 className="text-6xl tracking-wide font-light text-white filter brightness-200">
-							Hi, I'm <span className="text-sky-400">Logan</span>.
+							Hi, I'm <span className="text-sky-800">Logan</span>.
 						</h1>
 						<p className="text-3xl font-light mt-8">A software engineer by trade, a designer at heart.</p>
 
@@ -57,7 +57,7 @@ export const Home = () => {
 					</div>
 				</div>
 				{/* Waves */}
-				<div className="absolute bottom-0 left-0 w-full scale-y-105 translate-y-4 ">
+				<div className="absolute bottom-0 left-0 w-full scale-y-105">
 					<svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
 						<defs>
 							<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -73,7 +73,7 @@ export const Home = () => {
 			</div>
 
 			{/* --- About Me Section --- */}
-			<div id="about-me" className="container mx-auto border-t border-blue-950" />
+			{/* <div id="about-me" className="container mx-auto border-t border-blue-950 z-10 -translate-y-px" /> */}
 			<div className="container mx-auto py-8 flex flex-1 flex-col justify-center items-center">
 				{/* Header */}
 				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">About Me</h2>
@@ -267,7 +267,7 @@ export const Home = () => {
 				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Contact</h2>
 				<div className="min-h-[60vh] flex justify-center items-center flex-row px-16">
 					<div className="text-left w-1/3">
-						<p className="text-6xl font-semibold text-sky-300">Let's talk!</p>
+						<p className="text-6xl font-semibold text-sky-400">Let's talk!</p>
 						<p className="text-lg mt-4">Send me an email and I'll get back to you within 24 hours, or connect with me on any of the following platforms.</p>
 						<div className="flex flex-col mt-6 gap-y-2">
 							<a href="mailto:lhalverson2001@gmail.com" className="hover:text-amber-400 transition">
