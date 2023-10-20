@@ -133,11 +133,10 @@ export const Home = () => {
 					{/* VRColors Card */}
 					<div className="grid grid-cols-10 mt-16">
 						<div className="col-span-6 col-start-1 row-span-full self-center rounded-md relative">
-							<a
-								href="https://warm-empanada-0fb072.netlify.app/"
-								className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md"
-							/>
-							<img className="rounded-md object-cover" src={vrcolorsBanner} alt="VRColors Banner" />
+							<a href="https://warm-empanada-0fb072.netlify.app/">
+								<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md" />
+								<img className="rounded-md object-cover" src={vrcolorsBanner} alt="VRColors Banner" />
+							</a>
 						</div>
 						<div className="col-span-6 col-start-5 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
 							{/* Title */}
@@ -180,11 +179,10 @@ export const Home = () => {
 					{/* KARE Card */}
 					<div className="grid grid-cols-10 mt-16">
 						<div className="col-span-6 col-end-11 row-span-full self-center rounded-md relative">
-							<a
-								href="https://docs.google.com/presentation/d/1XarBl_QDAfMsQfs9jbCJ5wgOAwlmfGGLSa14Xk8ef8A/edit#slide=id.g24bd759f86a_1_363"
-								className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md"
-							/>
-							<img className="rounded-md object-cover" src={kareBanner} alt="KARE Banner" />
+							<a href="https://docs.google.com/presentation/d/1XarBl_QDAfMsQfs9jbCJ5wgOAwlmfGGLSa14Xk8ef8A/edit#slide=id.g24bd759f86a_1_363">
+								<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md" />
+								<img className="rounded-md object-cover" src={kareBanner} alt="KARE Banner" />
+							</a>
 						</div>
 						<div className="col-span-6 col-start-1 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
 							{/* Title */}
@@ -220,11 +218,10 @@ export const Home = () => {
 					{/* The Alley Card */}
 					<div className="grid grid-cols-10 mt-16">
 						<div className="col-span-6 col-start-1 row-span-full self-center rounded-md relative">
-							<a
-								href="https://regal-cactus-f42c40.netlify.app/"
-								className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md"
-							/>
-							<img className="rounded-md object-cover" src={alleyBanner} alt="The Alley Banner" />
+							<a href="https://regal-cactus-f42c40.netlify.app/">
+								<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md" />
+								<img className="rounded-md object-cover" src={alleyBanner} alt="The Alley Banner" />
+							</a>
 						</div>
 						<div className="col-span-6 col-start-5 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
 							{/* Title */}
