@@ -11,7 +11,7 @@ export const Home = () => {
 	return (
 		<div className="text-white tracking-wide bg-slate-950">
 			{/* Hero Banner */}
-			<div className="from-neutral-950 to-slate-950 bg-gradient-to-b">
+			<div className="from-neutral-950 to-slate-950 bg-gradient-to-b relative">
 				<div className="container mx-auto min-h-screen flex flex-1 flex-col justify-center items-start">
 					<div className="text-left">
 						<h1 className="text-6xl tracking-wide font-light text-white filter brightness-200">
@@ -56,9 +56,8 @@ export const Home = () => {
 				</div>
 			</div>
 
-			{/* Separator Hero-About */}
-			<div className="container mx-auto border-t border-blue-950" />
-
+			{/* --- About Me Section --- */}
+			<div id="about-me" className="container mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8 flex flex-1 flex-col justify-center items-center">
 				{/* Header */}
 				<h2 className="text-5xl tracking-wide font-light text-white">About Me</h2>
@@ -77,16 +76,16 @@ export const Home = () => {
 							in 2023. I am currently seeking employment but enjoying my time building projects until that day comes.
 						</p>
 						<p className="prose text-white text-lg font-thin">
-							I first set hands on a keyboard at five years old in 2006, though it was more like mashing stubby fingers against it than typing. My father worked
-							as a network engineer, so it was only natural I'd be taught early how to use a computer. Ever since, I've been fascinated with them throughout my
-							schooling and beyond.
+							I first set hands on a keyboard at five years old in 2006, although it was much more mashing stubby fingers against it than typing. My father
+							worked as a network engineer, so it was only natural I'd be taught early how to use a computer. Ever since, I've been fascinated with them
+							throughout my schooling and beyond.
 						</p>
 						<p className="prose text-white text-lg font-thin">
-							Outside of programming, my favorite past time as I've grown older is reading. You can find what I'm currently reading on my{' '}
+							Outside of programming, my favorite past time is reading. You can find what I'm currently reading on my{' '}
 							<a href="https://app.thestorygraph.com/profile/edelstein" className="text-amber-400 underline">
 								storygraph profile
 							</a>
-							. When among friends, we play video games like we have been since elmenetary school.
+							. When among friends, we play video games like we have been since elementary school.
 						</p>
 
 						{/* Skills Header */}
@@ -110,9 +109,8 @@ export const Home = () => {
 				</div>
 			</div>
 
-			{/* Separator About-Projects */}
+			{/* --- Latest Works Section --- */}
 			<div id="latest-works" className="container mx-auto border-t border-blue-950" />
-
 			<div className="container mx-auto py-8 flex flex-1 flex-col justify-center items-center">
 				<h2 className="text-5xl tracking-wide font-light text-white text-center">Latest Works</h2>
 
@@ -239,6 +237,22 @@ export const Home = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* --- Contact Section --- */}
+			<div id="contact" className="container mx-auto border-t border-blue-950" />
+			<div className="container mx-auto py-8">
+				<div className="min-h-[80vh]"></div>
+			</div>
+
+			<footer className="flex justify-center items-center w-full">
+				<a
+					href="https://github.com/loganhalverson/portfolio"
+					className="cursor-pointer hover:text-amber-400 tracking-wide py-4 text-neutral-400 font-mono text-sm text-center transition">
+					<p>
+						Designed & Built by Logan Halverson <br /> Source Code available on GitHub
+					</p>
+				</a>
+			</footer>
 		</div>
 	);
 };
