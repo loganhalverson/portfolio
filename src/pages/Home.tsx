@@ -6,6 +6,7 @@ import alleyBanner from '../assets/images/banners/theAlley.png';
 import kareBanner from '../assets/images/banners/KAREproject.png';
 
 import { Skill } from '../components/Skill';
+import { Tool } from '../components/Tool';
 
 export const Home = () => {
 	return (
@@ -17,7 +18,7 @@ export const Home = () => {
 						<h1 className="text-6xl tracking-wide font-light text-white filter brightness-200">
 							Hi, I'm <span className="text-teal-400">Logan</span>.
 						</h1>
-						<h2 className="text-3xl font-light mt-8">A software engineer by trade, a designer at heart.</h2>
+						<p className="text-3xl font-light mt-8">A software engineer by trade, a designer at heart.</p>
 						<div className="flex flex-row gap-x-6">
 							<a
 								href="#latest-works"
@@ -123,7 +124,7 @@ export const Home = () => {
 						</div>
 						<div className="col-span-6 col-start-5 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
 							{/* Title */}
-							<h1 className="font-thin text-4xl uppercase tracking-wide text-teal-400">VRColors</h1>
+							<h3 className="font-thin text-4xl uppercase tracking-wide text-teal-400">VRColors</h3>
 							{/* Description */}
 							<p className="mt-2 prose">
 								A theme creation and sharing website for VRChat. Created to solve a problem within the community, I learned how to build a complex web
@@ -132,9 +133,10 @@ export const Home = () => {
 								the design and clarifying features of the website based on the feedback receieved.
 							</p>
 							{/* Skills */}
-							<div className="mt-4 flex flex-row gap-x-3">
-								<span className="rounded-md bg-teal-900 px-2 py-1 text-center font-semibold text-teal-50">React</span>
-								<span className="rounded-md bg-teal-900 px-2 py-1 text-center font-semibold text-teal-50">Tailwind CSS</span>
+							<p className="mt-4 font-thin text-lg uppercase tracking-wide text-teal-500">Tools Used</p>
+							<div className="flex flex-row gap-x-3">
+								<Tool text="React" />
+								<Tool text="Tailwind CSS" />
 							</div>
 							{/* Links */}
 							<div>
@@ -166,7 +168,7 @@ export const Home = () => {
 						</div>
 						<div className="col-span-6 col-start-1 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
 							{/* Title */}
-							<h1 className="font-thin text-4xl uppercase tracking-wide text-teal-400">KARE Project</h1>
+							<h3 className="font-thin text-4xl uppercase tracking-wide text-teal-400">KARE Project</h3>
 							{/* Description */}
 							<p className="mt-2 prose">
 								Medical software developed by a team of <span className="font-semibold text-teal-200">nine developers</span> for my college capstone course. The
@@ -176,10 +178,11 @@ export const Home = () => {
 								development went smoothly.
 							</p>
 							{/* Skills */}
-							<div className="mt-4 flex flex-row gap-x-3">
-								<span className="rounded-md bg-teal-900 px-2 py-1 text-center font-semibold text-teal-50">React Native</span>
-								<span className="rounded-md bg-teal-900 px-2 py-1 text-center font-semibold text-teal-50">Expo GO</span>
-								<span className="rounded-md bg-teal-900 px-2 py-1 text-center font-semibold text-teal-50">LAMP Stack</span>
+							<p className="mt-4 font-thin text-lg uppercase tracking-wide text-teal-500">Tools Used</p>
+							<div className="flex flex-row gap-x-3">
+								<Tool text="React Native" />
+								<Tool text="Expo GO" />
+								<Tool text="Lamp Stack" />
 							</div>
 							{/* Links */}
 							<a
@@ -203,16 +206,17 @@ export const Home = () => {
 						</div>
 						<div className="col-span-6 col-start-5 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
 							{/* Title */}
-							<h1 className="font-thin text-4xl uppercase tracking-wide text-teal-400">The Alley</h1>
+							<h3 className="font-thin text-4xl uppercase tracking-wide text-teal-400">The Alley</h3>
 							{/* Description */}
 							<p className="mt-2 prose">
 								A simple website for a local music venue. Developed as my first project with <span className="text-teal-200 font-semibold">Tailwind</span>, it
 								was a way for me to learn the library and create something for a place I loved.
 							</p>
 							{/* Skills */}
-							<div className="mt-4 flex flex-row gap-x-3">
-								<span className="rounded-md bg-teal-900 px-2 py-1 text-center font-semibold text-teal-50">HTML</span>
-								<span className="rounded-md bg-teal-900 px-2 py-1 text-center font-semibold text-teal-50">Tailwind CSS</span>
+							<p className="mt-4 font-thin text-lg uppercase tracking-wide text-teal-500">Tools Used</p>
+							<div className="flex flex-row gap-x-3">
+								<Tool text="HTML" />
+								<Tool text="Tailwind CSS" />
 							</div>
 							{/* Links */}
 							<div>
