@@ -57,7 +57,7 @@ export const Home = () => {
 					</div>
 				</div>
 				{/* Waves */}
-				<div className="absolute bottom-0 left-0 w-full">
+				<div className="absolute bottom-0 left-0 w-full scale-y-105 translate-y-4 ">
 					<svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
 						<defs>
 							<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -96,7 +96,7 @@ export const Home = () => {
 							throughout my schooling and beyond.
 						</p>
 						<p className="prose text-white text-lg font-thin">
-							Outside of programming, my favorite past time is reading. You can find what I'm currently reading on my{' '}
+							Outside of programming, my favorite pastime is reading. You can find what I'm currently reading on my{' '}
 							<a href="https://app.thestorygraph.com/profile/edelstein" className="hover:text-amber-400 font-normal underline">
 								storygraph profile
 							</a>
@@ -131,9 +131,12 @@ export const Home = () => {
 
 				<div className="px-16">
 					{/* VRColors Card */}
-					<div className="grid grid-cols-10 mt-16 group">
+					<div className="grid grid-cols-10 mt-16">
 						<div className="col-span-6 col-start-1 row-span-full self-center rounded-md relative">
-							<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition group-hover:opacity-10 delay-75 duration-500 rounded-md" />
+							<a
+								href="https://warm-empanada-0fb072.netlify.app/"
+								className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md"
+							/>
 							<img className="rounded-md object-cover" src={vrcolorsBanner} alt="VRColors Banner" />
 						</div>
 						<div className="col-span-6 col-start-5 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
@@ -175,9 +178,12 @@ export const Home = () => {
 					</div>
 
 					{/* KARE Card */}
-					<div className="grid grid-cols-10 mt-16 group">
+					<div className="grid grid-cols-10 mt-16">
 						<div className="col-span-6 col-end-11 row-span-full self-center rounded-md relative">
-							<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition group-hover:opacity-10 delay-75 duration-500 rounded-md" />
+							<a
+								href="https://docs.google.com/presentation/d/1XarBl_QDAfMsQfs9jbCJ5wgOAwlmfGGLSa14Xk8ef8A/edit#slide=id.g24bd759f86a_1_363"
+								className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md"
+							/>
 							<img className="rounded-md object-cover" src={kareBanner} alt="KARE Banner" />
 						</div>
 						<div className="col-span-6 col-start-1 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
@@ -212,9 +218,12 @@ export const Home = () => {
 					</div>
 
 					{/* The Alley Card */}
-					<div className="grid grid-cols-10 mt-16 group">
+					<div className="grid grid-cols-10 mt-16">
 						<div className="col-span-6 col-start-1 row-span-full self-center rounded-md relative">
-							<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition group-hover:opacity-10 delay-75 duration-500 rounded-md" />
+							<a
+								href="https://regal-cactus-f42c40.netlify.app/"
+								className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md"
+							/>
 							<img className="rounded-md object-cover" src={alleyBanner} alt="The Alley Banner" />
 						</div>
 						<div className="col-span-6 col-start-5 row-span-full self-center rounded-md bg-gradient-to-br from-neutral-950 to-gray-950 p-8 text-white z-10 flex flex-col gap-y-2">
@@ -259,8 +268,43 @@ export const Home = () => {
 			<div id="contact" className="container mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8">
 				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Contact</h2>
-				<div className="min-h-[60vh] flex justify-center items-center flex-row">
-					<p>Let's work together!</p>
+				<div className="min-h-[60vh] flex justify-center items-center flex-row px-16">
+					<div className="text-left w-1/3">
+						<p className="text-6xl font-semibold text-sky-300">Let's talk!</p>
+						<p className="text-lg mt-4">Send me an email and I'll get back to you within 24 hours, or connect with me on any of the following platforms.</p>
+						<div className="flex flex-col mt-6 gap-y-2">
+							<a href="mailto:lhalverson2001@gmail.com" className="hover:text-amber-400 transition">
+								<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
+									<path
+										fill="currentColor"
+										d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7l8-5V6l-8 5l-8-5v2l8 5Z"
+									/>
+								</svg>
+								<span>lhalverson2001@gmail.com</span>
+							</a>
+							<a href="https://github.com/loganhalverson" className="hover:text-amber-400 transition flex items-center">
+								<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
+									<path
+										fill="currentColor"
+										d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+									/>
+								</svg>
+								<span>@loganhalverson</span>
+							</a>
+							<a href="https://www.linkedin.com/in/logan-halverson/" className="hover:text-amber-400 transition flex items-center">
+								<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
+									<path
+										fill="currentColor"
+										d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+									/>
+								</svg>
+								<span>Logan Halverson</span>
+							</a>
+						</div>
+					</div>
+					<div className="w-2/3 text-center flex justify-center">
+						<img src="https://i.imgur.com/mmgfMxz.jpeg" className="max-w-lg place-self-center" alt="cat placeholder" />
+					</div>
 				</div>
 			</div>
 
