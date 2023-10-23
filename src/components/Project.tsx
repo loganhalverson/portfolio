@@ -45,12 +45,12 @@ export const Project = ({ data: { title, description, tools, links, banner }, fl
 		<div className="flex flex-col lg:grid grid-cols-10 mt-16">
 			<div className={`col-span-6 ${flip ? 'col-start-1' : 'col-end-11'} row-span-full self-center rounded-md relative`}>
 				<a href={links[0].href}>
-					<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md" />
-					<img className="rounded-md object-cover" src={banner} alt={`${title} banner`} />
+					<div className="absolute opacity-0 w-full h-full top-0 left-0 from-blue-950 to-sky-950 lg:opacity-30 bg-gradient-to-br transition hover:opacity-10 duration-500 rounded-md rounded-b-none lg:rounded-b-md" />
+					<img className="rounded-b-none rounded-md lg:rounded-b-md object-cover" src={banner} alt={`${title} banner`} />
 				</a>
 			</div>
 			<div
-				className={`col-span-6 row-span-full self-center rounded-md ${
+				className={`col-span-6 row-span-full self-center rounded-md rounded-t-none lg:rounded-t-md  ${
 					flip ? 'col-start-5' : 'col-start-1'
 				} bg-gradient-to-br from-neutral-950 to-gray-950 p-8 z-10 flex flex-col gap-y-2 
 				`}>

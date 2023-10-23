@@ -106,7 +106,7 @@ export const Home = () => {
 			{/* Hero Banner */}
 			<div className="bg-[#070c1d] relative px-16 md:px-0">
 				<div className="container mx-auto min-h-screen flex flex-1 flex-col justify-center items-center md:items-start ">
-					<div className="text-center md:text-left">
+					<div className="text-center md:text-left mx-8 lg:mx-0">
 						<h1 className="text-5xl md:text-6xl tracking-wide font-light text-white filter brightness-200">
 							Hi, I'm <span className="text-sky-800">Logan</span>.
 						</h1>
@@ -255,7 +255,7 @@ export const Home = () => {
 			</div>
 
 			{/* --- Latest Works Section --- */}
-			<div id="latest-works" className="container mx-auto border-t border-blue-950" />
+			<div id="latest-works" className="container lg:mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8 flex flex-1 flex-col justify-center items-center">
 				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Latest Works</h2>
 				<div className="px-16">
@@ -266,21 +266,22 @@ export const Home = () => {
 			</div>
 
 			{/* --- Contact Section --- */}
-			<div id="contact" className="container mx-auto border-t border-blue-950" />
+			<div id="contact" className="container lg:mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8">
-				{/* <h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Contact</h2> */}
-
 				<div className="min-h-[60vh] flex justify-center items-center flex-row px-16 relative">
 					<div className="flex h-full max-w-3xl py-8 items-center justify-center rounded-lg border-b-2 border-blue-950 bg-slate-950">
 						<div className="flex items-center justify-center px-8">
-							<div className="text-center md:text-left w-full md:w-2/3">
+							<div className="text-center lg:text-left w-full lg:w-2/3">
 								<p className="text-5xl font-semibold text-sky-400">Let's talk!</p>
-								<p className="text-lg mt-4">
-									Send me an email and I'll get back to you within 24 hours. That, or connect with me on any of the following platforms.
+								<p className="text-lg mt-8">
+									Send me an email and I'll get back to you within 24 hours. You can also connect with me on any of the platforms below.
 								</p>
-								{/* Socials */}
-								<div className="flex flex-col items-start mt-8 md:mt-4 gap-y-2">
-									<a href="mailto:lhalverson2001@gmail.com" className="hover:text-amber-400 text-sm items-center transition">
+
+								{/* Desktop Socials */}
+								<div className="hidden lg:flex flex-col items-start mt-8 lg:mt-4 gap-y-2">
+									<a
+										href="mailto:lhalverson2001@gmail.com"
+										className="hover:text-amber-400 focus:text-amber-400 text-sm items-center flex flex-nowrap transition">
 										<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
 											<path
 												fill="currentColor"
@@ -289,7 +290,9 @@ export const Home = () => {
 										</svg>
 										<span>lhalverson2001@gmail.com</span>
 									</a>
-									<a href="https://github.com/loganhalverson" className="hover:text-amber-400 text-sm transition flex items-center">
+									<a
+										href="https://github.com/loganhalverson"
+										className="hover:text-amber-400 focus:text-amber-400 text-sm transition flex flex-nowrap items-center">
 										<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
 											<path
 												fill="currentColor"
@@ -298,7 +301,9 @@ export const Home = () => {
 										</svg>
 										<span>@loganhalverson</span>
 									</a>
-									<a href="https://www.linkedin.com/in/logan-halverson/" className="hover:text-amber-400 text-sm transition flex items-center">
+									<a
+										href="https://www.linkedin.com/in/logan-halverson/"
+										className="hover:text-amber-400 focus:text-amber-400 text-sm transition flex flex-nowrap items-center">
 										<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
 											<path
 												fill="currentColor"
@@ -308,8 +313,42 @@ export const Home = () => {
 										<span>Logan Halverson</span>
 									</a>
 								</div>
+
+								{/* Mobile Socials */}
+								<div className="flex flex-row lg:hidden items-center justify-center mt-8 gap-x-16">
+									<a
+										href="mailto:lhalverson2001@gmail.com"
+										className="hover:text-amber-400 focus:text-amber-400 text-sm items-center flex flex-nowrap transition">
+										<svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 inline" viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7l8-5V6l-8 5l-8-5v2l8 5Z"
+											/>
+										</svg>
+									</a>
+									<a
+										href="https://github.com/loganhalverson"
+										className="hover:text-amber-400 focus:text-amber-400 text-sm transition flex flex-nowrap items-center">
+										<svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 inline" viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+											/>
+										</svg>
+									</a>
+									<a
+										href="https://www.linkedin.com/in/logan-halverson/"
+										className="hover:text-amber-400 focus:text-amber-400 text-sm transition flex flex-nowrap items-center">
+										<svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 inline" viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+											/>
+										</svg>
+									</a>
+								</div>
 							</div>
-							<div className="w-2/3 text-center hidden md:flex justify-center">
+							<div className="w-2/3 text-center hidden lg:flex justify-center">
 								<svg xmlns="http://www.w3.org/2000/svg" className="w-4/6 text-neutral-50" viewBox="0 0 24 24">
 									<path
 										fill="currentColor"
