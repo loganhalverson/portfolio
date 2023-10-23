@@ -215,17 +215,17 @@ export const Home = () => {
 					</div>
 					{/* Blurb */}
 					<div className="col-start-6 col-end-13 row-span-full flex flex-col flex-1 justify-center mt-8 lg:mt-0 gap-y-6 lg:gap-y-8">
-						<p className="prose text-white text-lg font-thin">
+						<p className="prose text-white text-lg">
 							I earned my <span className="text-sky-300 font-semibold">Bachelor of Science in computer science</span> from Central Washington University in
 							2023, and am currently on the lookout for employment opportunities. In the meantime, I've been building cool projects (like this one!) and
 							learning new skills.
 						</p>
-						<p className="prose text-white text-lg font-thin">
+						<p className="prose text-white text-lg">
 							I first set hands on a keyboard at five years old in 2006, although it was much more mashing stubby fingers against it than typing. With my father
 							working as a network engineer, it was only natural I'd be taught how to use a computer early. Ever since, I've been fascinated with them
 							throughout my schooling and beyond.
 						</p>
-						<p className="prose text-white text-lg font-thin">
+						<p className="prose text-white text-lg">
 							Outside of programming, my favorite pastime is reading. You can find what I'm currently reading on my{' '}
 							<a href="https://app.thestorygraph.com/profile/edelstein" className="hover:text-amber-400 font-normal underline">
 								storygraph profile
@@ -258,7 +258,7 @@ export const Home = () => {
 			<div id="latest-works" className="container lg:mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8 flex flex-1 flex-col justify-center items-center">
 				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Latest Works</h2>
-				<div className="px-16">
+				<div className="px-4 lg:px-16">
 					<Project data={vrcolorsData} flip />
 					<Project data={kareData} />
 					<Project data={alleyData} flip />
@@ -349,7 +349,7 @@ export const Home = () => {
 								</div>
 							</div>
 							<div className="w-2/3 text-center hidden lg:flex justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" className="w-4/6 text-neutral-50" viewBox="0 0 24 24">
+								<svg xmlns="http://www.w3.org/2000/svg" className="w-4/6 text-white" viewBox="0 0 24 24">
 									<path
 										fill="currentColor"
 										d="M17 22q-.425 0-.713-.288T16 21v-1.25q-.975-.325-1.75-.988t-1.225-1.587q-.2-.375 0-.75t.6-.55q.35-.15.7.025t.55.525q.4.725 1.1 1.15T17.5 18h3q.625 0 1.063.438T22 19.5V21q0 .425-.288.713T21 22h-4Zm2-5q-.825 0-1.413-.588T17 15q0-.825.588-1.413T19 13q.825 0 1.413.588T21 15q0 .825-.588 1.413T19 17Zm-1.925-9.95q-2.35.3-4.013 1.975t-1.987 4.025q-.05.425-.35.688T10 14q-.425 0-.713-.288t-.237-.687q.35-3.2 2.613-5.425t5.462-2.55q.375-.05.625.238T18 6q0 .4-.263.7t-.662.35Zm.15 4.05q-.775.2-1.35.762T15.1 13.2q-.1.35-.412.575T14 14q-.425 0-.7-.263t-.225-.612q.275-1.575 1.413-2.675T17.2 9.075q.35-.05.575.238T18 10q0 .375-.213.688t-.562.412ZM3 11q-.425 0-.713-.288T2 10V8.5q0-.625.438-1.063T3.5 7h3q.825 0 1.525-.425t1.1-1.15q.2-.35.55-.563t.725-.087q.425.125.65.475t.075.725Q10.7 7 9.875 7.7T8 8.75V10q0 .425-.288.713T7 11H3Zm2-5q-.825 0-1.413-.588T3 4q0-.825.588-1.413T5 2q.825 0 1.413.588T7 4q0 .825-.588 1.413T5 6Z"
