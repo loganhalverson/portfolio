@@ -30,7 +30,7 @@ export const Project = ({ data: { title, description, tools, links, banner }, fl
 	// Render each link in links
 	const linkElements = links.map((link) => {
 		return (
-			<a href={link.href} className="mt-6 inline-flex items-center mr-4 group/link hover:text-amber-400 transition">
+			<a href={link.href} className="mt-2 lg:mt-6 inline-flex items-center mr-4 group/link hover:text-amber-400 transition">
 				{link.icon}
 				<span className="group-hover/link:underline">{link.label}</span>
 			</a>
@@ -42,7 +42,7 @@ export const Project = ({ data: { title, description, tools, links, banner }, fl
 	});
 
 	return (
-		<div className="grid grid-cols-10 mt-16">
+		<div className="flex flex-col lg:grid grid-cols-10 mt-16">
 			<div className={`col-span-6 ${flip ? 'col-start-1' : 'col-end-11'} row-span-full self-center rounded-md relative`}>
 				<a href={links[0].href}>
 					<div className="absolute w-full h-full top-0 left-0 from-blue-950 to-sky-950 opacity-50 bg-gradient-to-br transition hover:opacity-10 delay-75 duration-500 rounded-md" />
@@ -57,7 +57,7 @@ export const Project = ({ data: { title, description, tools, links, banner }, fl
 				{/* Title */}
 				<h3 className="font-thin text-4xl uppercase tracking-wide text-sky-400">{title}</h3>
 				{/* Description */}
-				<p className="mt-2 prose">{description}</p>
+				<p className="mt-2 prose text-sm lg:text-md">{description}</p>
 				{/* Tools */}
 				<p className="mt-4 font-thin text-lg uppercase tracking-wide text-sky-500">Tools Used</p>
 				<div className="flex flex-row gap-x-3">{toolElements}</div>

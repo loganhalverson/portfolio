@@ -104,18 +104,19 @@ export const Home = () => {
 	return (
 		<div className="text-white tracking-wide bg-slate-950">
 			{/* Hero Banner */}
-			<div className="bg-[#070c1d] relative">
-				<div className="container mx-auto min-h-screen flex flex-1 flex-col justify-center items-start">
-					<div className="text-left">
-						<h1 className="text-6xl tracking-wide font-light text-white filter brightness-200">
+			<div className="bg-[#070c1d] relative px-16 md:px-0">
+				<div className="container mx-auto min-h-screen flex flex-1 flex-col justify-center items-center md:items-start ">
+					<div className="text-center md:text-left">
+						<h1 className="text-5xl md:text-6xl tracking-wide font-light text-white filter brightness-200">
 							Hi, I'm <span className="text-sky-800">Logan</span>.
 						</h1>
-						<p className="text-3xl font-light mt-8">A software engineer by trade, a designer at heart.</p>
+						<p className="text-2xl md:text-3xl font-light mt-4 md:mt-8">A software engineer by trade, a designer at heart.</p>
 
-						<div className="flex flex-row gap-x-6">
+						{/* Desktop Buttons */}
+						<div className="hidden md:flex mt-8 flex-row gap-x-6">
 							<a
 								href="#latest-works"
-								className="mt-8 text-2xl font-light border-slate-800 border-2 hover:border-slate-600 hover:bg-slate-800 transition group rounded-md px-4 py-3 flex items-center text-center w-fit">
+								className="text-2xl font-light border-slate-800 border-2 hover:border-slate-600 hover:bg-slate-800 transition group rounded-md px-4 py-3 flex items-center text-center w-fit">
 								<span>See my work</span>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -129,8 +130,44 @@ export const Home = () => {
 							</a>
 							<a
 								href="https://drive.google.com/file/d/1KxCVNtJlw7PyXjL6gLTpgz68qXwWMvx4/view"
-								className="mt-8 text-2xl font-light border-slate-800 border-2 hover:border-slate-600 hover:bg-slate-800 transition group rounded-md px-4 py-3 flex items-center text-center w-fit">
+								className="text-2xl font-light border-slate-800 border-2 hover:border-slate-600 hover:bg-slate-800 transition group rounded-md px-4 py-3 flex items-center text-center w-fit">
 								<span>See my résumé</span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									strokeWidth={1.5}
+									stroke="currentColor"
+									className="group-hover:scale-125 translate-y-0.5 transition duration-200 ml-3 w-5 h-5">
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+									/>
+								</svg>
+							</a>
+						</div>
+
+						{/* Mobile Buttons */}
+						<div className="flex justify-center md:hidden mt-8 flex-row gap-x-6">
+							<a
+								href="#latest-works"
+								className="text-2xl font-light border-slate-800 border-2 hover:border-slate-600 hover:bg-slate-800 transition group rounded-md px-4 py-3 flex items-center text-center w-fit">
+								<span>Projects</span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									strokeWidth={1.5}
+									stroke="currentColor"
+									className="rotate-90 translate-y-0.5 transition group-hover:scale-125 duration-200 ml-3 w-5 h-5">
+									<path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+								</svg>
+							</a>
+							<a
+								href="https://drive.google.com/file/d/1KxCVNtJlw7PyXjL6gLTpgz68qXwWMvx4/view"
+								className="text-2xl font-light border-slate-800 border-2 hover:border-slate-600 hover:bg-slate-800 transition group rounded-md px-4 py-3 flex items-center text-center w-fit">
+								<span>Résumé</span>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
@@ -165,23 +202,23 @@ export const Home = () => {
 			</div>
 
 			{/* --- About Me Section --- */}
-			{/* <div id="about-me" className="container mx-auto border-t border-blue-950 z-10 -translate-y-px" /> */}
 			<div className="container mx-auto py-8 flex flex-1 flex-col justify-center items-center">
 				{/* Header */}
 				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">About Me</h2>
 
-				<div className="mt-16 grid grid-cols-12 px-16 relative">
+				{/* About Me */}
+				<div className="flex flex-col text-center items-center lg:items-center lg:text-left justify-center row-span-full lg:grid grid-cols-12 px-16 relative mt-16">
 					{/* Portrait */}
-					<div className="col-span-4 col-start-1 row-span-full relative mb-3">
-						<div className="absolute h-full scale-x-105 border-sky-400 border-2 rounded-lg -top-4 left-0 right-0 bottom-0 w-full" />
-						<img src="https://i.imgur.com/OTnE1B5.jpeg" alt="portrait" className="rounded-lg object-cover filter brightness-90" />
+					<div className="col-span-4 col-start-1 row-span-full relative mb-3 max-w-md">
+						<div className="absolute h-full scale-x-105 border-sky-400 border-2 object-cover rounded-lg -top-4 left-0 right-0 bottom-0 w-full" />
+						<img src="https://i.imgur.com/OTnE1B5.jpeg" alt="portrait" className="rounded-lg max-h-fit object-cover filter brightness-90" />
 					</div>
 					{/* Blurb */}
-					<div className="col-start-6 col-end-13 row-span-full flex flex-col flex-1 justify-center gap-y-6">
+					<div className="col-start-6 col-end-13 row-span-full flex flex-col flex-1 justify-center mt-8 lg:mt-0 gap-y-6 lg:gap-y-8">
 						<p className="prose text-white text-lg font-thin">
 							I earned my <span className="text-sky-300 font-semibold">Bachelor of Science in computer science</span> from Central Washington University in
 							2023, and am currently on the lookout for employment opportunities. In the meantime, I've been building cool projects (like this one!) and
-							learning new frameworks.
+							learning new skills.
 						</p>
 						<p className="prose text-white text-lg font-thin">
 							I first set hands on a keyboard at five years old in 2006, although it was much more mashing stubby fingers against it than typing. With my father
@@ -231,16 +268,18 @@ export const Home = () => {
 			{/* --- Contact Section --- */}
 			<div id="contact" className="container mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8">
-				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Contact</h2>
+				{/* <h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Contact</h2> */}
+
 				<div className="min-h-[60vh] flex justify-center items-center flex-row px-16 relative">
-					<div className="absolute flex h-[24rem] w-[48rem] items-center justify-center rounded-lg border-b-2 border-blue-950 bg-slate-950">
+					<div className="flex h-full max-w-3xl py-8 items-center justify-center rounded-lg border-b-2 border-blue-950 bg-slate-950">
 						<div className="flex items-center justify-center px-8">
-							<div className="text-left w-2/3">
+							<div className="text-center md:text-left w-full md:w-2/3">
 								<p className="text-5xl font-semibold text-sky-400">Let's talk!</p>
 								<p className="text-lg mt-4">
 									Send me an email and I'll get back to you within 24 hours. That, or connect with me on any of the following platforms.
 								</p>
-								<div className="flex flex-col mt-4 gap-y-2">
+								{/* Socials */}
+								<div className="flex flex-col items-start mt-8 md:mt-4 gap-y-2">
 									<a href="mailto:lhalverson2001@gmail.com" className="hover:text-amber-400 text-sm items-center transition">
 										<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
 											<path
@@ -270,9 +309,7 @@ export const Home = () => {
 									</a>
 								</div>
 							</div>
-							<div className="w-2/3 text-center flex justify-center">
-								{/* <img src="https://i.imgur.com/mmgfMxz.jpeg" className="max-w-xs place-self-center object-contain" alt="cat placeholder" /> */}
-								{/* className="w-4/6 text-neutral-50" */}
+							<div className="w-2/3 text-center hidden md:flex justify-center">
 								<svg xmlns="http://www.w3.org/2000/svg" className="w-4/6 text-neutral-50" viewBox="0 0 24 24">
 									<path
 										fill="currentColor"
