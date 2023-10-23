@@ -88,12 +88,12 @@ const alleyData = {
 	links: [
 		{
 			label: 'Live Site',
-			href: 'https://docs.google.com/presentation/d/1XarBl_QDAfMsQfs9jbCJ5wgOAwlmfGGLSa14Xk8ef8A/edit#slide=id.g24bd759f86a_1_363',
+			href: 'https://regal-cactus-f42c40.netlify.app/',
 			icon: svgIconElements['chain'],
 		},
 		{
 			label: 'Source Code',
-			href: 'https://github.com/loganhalverson/vrcolors',
+			href: 'https://github.com/loganhalverson/the-alley',
 			icon: svgIconElements['github'],
 		},
 	],
@@ -179,12 +179,13 @@ export const Home = () => {
 					{/* Blurb */}
 					<div className="col-start-6 col-end-13 row-span-full flex flex-col flex-1 justify-center gap-y-6">
 						<p className="prose text-white text-lg font-thin">
-							I graduated from Central Washington University with a <span className="text-sky-300 font-normal">Bachelor of Science in computer science</span> in
-							2023. I am currently seeking employment but enjoying my time building projects until that day comes.
+							I earned my <span className="text-sky-300 font-semibold">Bachelor of Science in computer science</span> from Central Washington University in
+							2023, and am currently on the lookout for employment opportunities. In the meantime, I've been building cool projects (like this one!) and
+							learning new frameworks.
 						</p>
 						<p className="prose text-white text-lg font-thin">
-							I first set hands on a keyboard at five years old in 2006, although it was much more mashing stubby fingers against it than typing. My father
-							worked as a network engineer, so it was only natural I'd be taught early how to use a computer. Ever since, I've been fascinated with them
+							I first set hands on a keyboard at five years old in 2006, although it was much more mashing stubby fingers against it than typing. With my father
+							working as a network engineer, it was only natural I'd be taught how to use a computer early. Ever since, I've been fascinated with them
 							throughout my schooling and beyond.
 						</p>
 						<p className="prose text-white text-lg font-thin">
@@ -231,43 +232,56 @@ export const Home = () => {
 			<div id="contact" className="container mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8">
 				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Contact</h2>
-				<div className="min-h-[60vh] flex justify-center items-center flex-row px-16">
-					{/* <div className="text-left w-1/3">
-						<p className="text-6xl font-semibold text-sky-400">Let's talk!</p>
-						<p className="text-lg mt-4">Send me an email and I'll get back to you within 24 hours, or connect with me on any of the following platforms.</p>
-						<div className="flex flex-col mt-6 gap-y-2">
-							<a href="mailto:lhalverson2001@gmail.com" className="hover:text-amber-400 transition">
-								<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
+				<div className="min-h-[60vh] flex justify-center items-center flex-row px-16 relative">
+					<div className="absolute flex h-[24rem] w-[48rem] items-center justify-center rounded-lg border-b-2 border-blue-950 bg-slate-950">
+						<div className="flex items-center justify-center px-8">
+							<div className="text-left w-2/3">
+								<p className="text-5xl font-semibold text-sky-400">Let's talk!</p>
+								<p className="text-lg mt-4">
+									Send me an email and I'll get back to you within 24 hours. That, or connect with me on any of the following platforms.
+								</p>
+								<div className="flex flex-col mt-4 gap-y-2">
+									<a href="mailto:lhalverson2001@gmail.com" className="hover:text-amber-400 text-sm items-center transition">
+										<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7l8-5V6l-8 5l-8-5v2l8 5Z"
+											/>
+										</svg>
+										<span>lhalverson2001@gmail.com</span>
+									</a>
+									<a href="https://github.com/loganhalverson" className="hover:text-amber-400 text-sm transition flex items-center">
+										<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+											/>
+										</svg>
+										<span>@loganhalverson</span>
+									</a>
+									<a href="https://www.linkedin.com/in/logan-halverson/" className="hover:text-amber-400 text-sm transition flex items-center">
+										<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+											/>
+										</svg>
+										<span>Logan Halverson</span>
+									</a>
+								</div>
+							</div>
+							<div className="w-2/3 text-center flex justify-center">
+								{/* <img src="https://i.imgur.com/mmgfMxz.jpeg" className="max-w-xs place-self-center object-contain" alt="cat placeholder" /> */}
+								{/* className="w-4/6 text-neutral-50" */}
+								<svg xmlns="http://www.w3.org/2000/svg" className="w-4/6 text-neutral-50" viewBox="0 0 24 24">
 									<path
 										fill="currentColor"
-										d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7l8-5V6l-8 5l-8-5v2l8 5Z"
+										d="M17 22q-.425 0-.713-.288T16 21v-1.25q-.975-.325-1.75-.988t-1.225-1.587q-.2-.375 0-.75t.6-.55q.35-.15.7.025t.55.525q.4.725 1.1 1.15T17.5 18h3q.625 0 1.063.438T22 19.5V21q0 .425-.288.713T21 22h-4Zm2-5q-.825 0-1.413-.588T17 15q0-.825.588-1.413T19 13q.825 0 1.413.588T21 15q0 .825-.588 1.413T19 17Zm-1.925-9.95q-2.35.3-4.013 1.975t-1.987 4.025q-.05.425-.35.688T10 14q-.425 0-.713-.288t-.237-.687q.35-3.2 2.613-5.425t5.462-2.55q.375-.05.625.238T18 6q0 .4-.263.7t-.662.35Zm.15 4.05q-.775.2-1.35.762T15.1 13.2q-.1.35-.412.575T14 14q-.425 0-.7-.263t-.225-.612q.275-1.575 1.413-2.675T17.2 9.075q.35-.05.575.238T18 10q0 .375-.213.688t-.562.412ZM3 11q-.425 0-.713-.288T2 10V8.5q0-.625.438-1.063T3.5 7h3q.825 0 1.525-.425t1.1-1.15q.2-.35.55-.563t.725-.087q.425.125.65.475t.075.725Q10.7 7 9.875 7.7T8 8.75V10q0 .425-.288.713T7 11H3Zm2-5q-.825 0-1.413-.588T3 4q0-.825.588-1.413T5 2q.825 0 1.413.588T7 4q0 .825-.588 1.413T5 6Z"
 									/>
 								</svg>
-								<span>lhalverson2001@gmail.com</span>
-							</a>
-							<a href="https://github.com/loganhalverson" className="hover:text-amber-400 transition flex items-center">
-								<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
-									<path
-										fill="currentColor"
-										d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
-									/>
-								</svg>
-								<span>@loganhalverson</span>
-							</a>
-							<a href="https://www.linkedin.com/in/logan-halverson/" className="hover:text-amber-400 transition flex items-center">
-								<svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 inline mr-3" viewBox="0 0 24 24">
-									<path
-										fill="currentColor"
-										d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
-									/>
-								</svg>
-								<span>Logan Halverson</span>
-							</a>
+							</div>
 						</div>
 					</div>
-					<div className="w-2/3 text-center flex justify-center">
-						<img src="https://i.imgur.com/mmgfMxz.jpeg" className="max-w-lg place-self-center" alt="cat placeholder" />
-					</div> */}
 				</div>
 			</div>
 
