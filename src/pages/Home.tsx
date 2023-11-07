@@ -129,7 +129,7 @@ export const Home = () => {
 								</svg>
 							</a>
 							<a
-								href="https://drive.google.com/file/d/1KxCVNtJlw7PyXjL6gLTpgz68qXwWMvx4/view"
+								href="https://drive.google.com/file/d/1eAaKsS5tTSuqr_rWW2LmYzZiZRqOXkbG/view?usp=drive_link"
 								className="text-2xl font-light border-slate-800 border-2 hover:border-slate-600 hover:bg-slate-800 transition group rounded-md px-4 py-3 flex items-center text-center w-fit">
 								<span>See my résumé</span>
 								<svg
@@ -165,7 +165,7 @@ export const Home = () => {
 								</svg>
 							</a>
 							<a
-								href="https://drive.google.com/file/d/1KxCVNtJlw7PyXjL6gLTpgz68qXwWMvx4/view"
+								href="https://drive.google.com/file/d/1eAaKsS5tTSuqr_rWW2LmYzZiZRqOXkbG/view?usp=drive_link"
 								className="text-2xl font-light border-slate-800 border-2 hover:border-slate-600 hover:bg-slate-800 transition group rounded-md px-4 py-3 flex items-center text-center w-fit">
 								<span>Résumé</span>
 								<svg
