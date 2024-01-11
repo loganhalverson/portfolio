@@ -54,17 +54,18 @@ const vrcolorsData = {
 	title: 'VRColors',
 	description: (
 		<>
-			A theme creation and sharing website for VRChat. Created to solve a problem within the community, I learned how to build a complex web application using{' '}
-			<span className="text-sky-300 font-semibold">modern React principles</span>. A significant focus of the app was user experience. This was developed by{' '}
-			<span className="text-sky-300 font-semibold">conducting user interviews</span> with several people, adjusting the design and clarifying features of the
-			website based on the feedback receieved.
+			A theme creation and sharing website for VRChat built using <span className="text-sky-300 font-semibold">modern React principles</span>. I created a cache
+			system using <span className="text-sky-300 font-semibold">Cloudflare Workers</span> to reduce the generation time of thumbnails{' '}
+			<span className="text-amber-300 font-semibold">from 1150ms to 50ms</span>. A significant focus of the app was user experience. This was developed by{' '}
+			<span className="text-sky-300 font-semibold">conducting user interviews</span>, adjusting the design and clarifying features based on the feedback
+			receieved.
 		</>
 	),
-	tools: ['React', 'Tailwind CSS'],
+	tools: ['React', 'Tailwind CSS', 'Express', 'Cloudflare', 'Node.js'],
 	links: [
 		{
 			label: 'Live Site',
-			href: 'https://warm-empanada-0fb072.netlify.app/',
+			href: 'https://vrcolors.app',
 			icon: svgIconElements['chain'],
 		},
 		{
@@ -108,7 +109,7 @@ export const Home = () => {
 				<div className="container mx-auto min-h-screen flex flex-1 flex-col justify-center items-center md:items-start ">
 					<div className="text-center md:text-left mx-8 lg:mx-0">
 						<h1 className="text-5xl md:text-6xl tracking-wide font-light text-white filter brightness-200">
-							Hi, I'm <span className="text-sky-800">Logan</span>.
+							Hi, I'm <span className="text-sky-800">Logan.</span>
 						</h1>
 						<p className="text-2xl md:text-3xl font-light mt-4 md:mt-8">A software engineer by trade, a designer at heart.</p>
 
@@ -129,7 +130,7 @@ export const Home = () => {
 								</svg>
 							</a>
 							<a
-								href="https://drive.google.com/file/d/1eAaKsS5tTSuqr_rWW2LmYzZiZRqOXkbG/view?usp=drive_link"
+								href="https://drive.google.com/file/d/1jRcYa85ZwD8UZ1EEztVpCCaKenRfCO9q/view?usp=sharing"
 								className="text-2xl font-light border-slate-800 border-2 hover:border-slate-600 hover:bg-slate-800 transition group rounded-md px-4 py-3 flex items-center text-center w-fit">
 								<span>See my résumé</span>
 								<svg
@@ -221,16 +222,17 @@ export const Home = () => {
 							learning new skills.
 						</p>
 						<p className="prose text-white text-lg">
-							I first set hands on a keyboard at five years old in 2006, although it was much more mashing stubby fingers against it than typing. With my father
-							working as a network engineer, it was only natural I'd be taught how to use a computer early. Ever since, I've been fascinated with them
-							throughout my schooling and beyond.
+							I first set hands on a keyboard at five years old in 2006, although it was more like mashing stubby fingers against it than typing. With my father
+							working as a network engineer, it was only natural that I grew up around computers. Ever since, I've been fascinated with them throughout my
+							schooling and beyond.
 						</p>
 						<p className="prose text-white text-lg">
 							Outside of programming, my favorite pastime is reading. You can find what I'm currently reading on my{' '}
 							<a href="https://app.thestorygraph.com/profile/edelstein" className="hover:text-amber-400 font-normal underline">
 								storygraph profile
 							</a>
-							. When among friends, we play video games like we have been since elementary school.
+							. Other than that, I have the standard assortment of nerd hobbies: board games, video games, art, and hiking. The picture is one I took in the Hoh
+							Rainforest.
 						</p>
 
 						{/* Skills Header */}
@@ -248,6 +250,7 @@ export const Home = () => {
 							<Skill option="Java" />
 							<Skill option="TypeScript" />
 							<Skill option="Figma" />
+							<Skill option="Cloudflare" />
 							<Skill option="Git" />
 						</div>
 					</div>
@@ -258,7 +261,7 @@ export const Home = () => {
 			<div id="latest-works" className="container lg:mx-auto border-t border-blue-950" />
 			<div className="container mx-auto py-8 flex flex-1 flex-col justify-center items-center">
 				<h2 className="text-5xl tracking-wide font-light text-white text-center my-2">Latest Works</h2>
-				<div className="px-4 lg:px-16">
+				<div className="mx-auto">
 					<Project data={vrcolorsData} flip />
 					<Project data={kareData} />
 					<Project data={alleyData} flip />

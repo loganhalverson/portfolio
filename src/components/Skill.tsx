@@ -6,8 +6,9 @@ import pythonIcon from '../assets/images/icons/icons8-python-100.png';
 import reactIcon from '../assets/images/icons/icons8-react-native-100.png';
 import tsIcon from '../assets/images/icons/icons8-typescript-100.png';
 import twIcon from '../assets/images/icons/icons8-tailwind-css-100.png';
+import csIcon from '../assets/images/icons/icons8-cloudflare-100.png';
 
-type SkillOption = 'Git' | 'Python' | 'Figma' | 'Java' | 'JavaScript' | 'React' | 'TypeScript' | 'Tailwind';
+type SkillOption = 'Git' | 'Python' | 'Figma' | 'Java' | 'JavaScript' | 'React' | 'TypeScript' | 'Tailwind' | 'Cloudflare';
 interface SkillProps {
 	option: SkillOption;
 }
@@ -38,6 +39,9 @@ export const Skill = ({ option }: SkillProps) => {
 			break;
 		case 'Tailwind':
 			icon = twIcon;
+			break;
+		case 'Cloudflare':
+			icon = csIcon;
 			break;
 	}
 
